@@ -1,0 +1,55 @@
+.custom-toolbar {
+    background-color: rgb(73, 219, 219); /* Example: Deep Orange */
+    color: #ffffff; /* Example: White text */
+  }
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.text{
+    color: black;
+    font-weight: bold;
+}
+
+
+.icon-container {
+  display: flex; /* Display icons in a row */
+  gap: 10px; /* Space between icons */
+  margin: 20px;
+}
+.icon-wrapper {
+  position: relative; /* Establishes a positioning context for the hover text */
+  display: inline-block; /* Keeps icon and text in the same block */
+  cursor: pointer; /* Shows a pointer cursor when hovering */
+}
+
+.hover-text {
+  visibility: hidden; /* Initially hide the text */
+  opacity: 0; /* Start with 0 opacity (fully transparent) */
+  background-color:  rgb(73, 219, 219); /* Background color for the text */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+  border-radius: 100px; /* Rounded corners */
+  padding: 5px; /* Padding around text */
+  position: absolute; /* Position relative to the container */
+  z-index: 1; /* Ensure the text appears above other elements */
+  top: 100%; /* Position below the button */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust centering */
+  white-space: nowrap; /* Prevent line breaks */
+  margin-top: 8px; /* Space between button and text */
+  transition: opacity 1s ease; /* Smooth transition for opacity */
+  font-weight: lighter;
+  font-size:smaller;
+}
+
+.icon-wrapper:hover .hover-text {
+  visibility: visible; /* Show text on hover */
+  opacity: 1; /* Change opacity to 1 (fully opaque) */
+}
+
+
+.hover-icon {
+  font-size: 25px; /* Icon size */
+}
+

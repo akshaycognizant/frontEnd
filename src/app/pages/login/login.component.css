@@ -1,0 +1,15 @@
+.full-width{
+    width: 80%;
+}
+
+.login-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .login-card:hover {
+    transform: translateY(-10px); /* Slightly lift the card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    background-color: rgb(242, 248, 248);
+    
+  }
